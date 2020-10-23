@@ -31,5 +31,5 @@ class Dashboard(db.Model):
             "name": self.name,
             "data": self.data,
             "created_at": self.created_at,
-            "update_at": self.updated_at
+            "updated_at": self.updated_at
         }
