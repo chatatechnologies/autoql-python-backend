@@ -1,9 +1,9 @@
-# AutoQL Example Python Backend
-## Dashboards, Query Prompts, Data Alerts
+# AutoQL Python Backend
+## Dashboards, Query Quick Start, Data Alerts
 
-The AutoQL Example Python Backend serves a sample REST API for managing Dashboards, Query Prompts, and Data Alerts.
+The AutoQL Python Backend serves as a sample REST API for managing Dashboards, Query Quick Start, and Data Alerts.
 
-Please note that this application is only intended to be an example and is missing some crucial elements, such as user
+Please note: This application is only intended to be an example and is missing some crucial elements, including user
 authentication and error handling. Therefore, it is not recommended for Production use in its current implementation.
 
 ### Setup
@@ -14,11 +14,11 @@ To begin, create a virtual environment and install the requirements:
 
 ```pip install -r requirements.txt```
 
-Next, we need to define the entry point for the application
+Next, define the entry point for the application:
 
 ```export FLASK_APP=app.py```
 
-Create the database tables. This will initialize a Sqlite database called "autoql.db" in the parent directory
+Create the database tables. This will initialize a Sqlite database called "autoql.db" in the parent directory:
 
 ```flask db upgrade```
 
@@ -29,13 +29,13 @@ Run the app on port 5000:
 
 ## Dashboards
 
-For information on the AutoQL Dashboard frontend components, please see our readme documentation:
+For information on the AutoQL Dashboard frontend components, please see our Developer Documentation:
 
 [React Dashboards](https://chata.readme.io/docs/react-dashboards)
 
 [Vanilla JS Dashboards](https://chata.readme.io/docs/vanilla-dashboards)
 
-### Create a dashboard
+### Create a Dashboard
 
 ```
 POST /dashboards
@@ -65,7 +65,7 @@ Request JSON Body
 }
 ```
 
-## Query Prompts
+## Query Quick Start
 Coming soon
 
 ## Data Alerts
