@@ -10,3 +10,5 @@ db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 
 from autoql_python_backend.dashboards import routes, models
+from autoql_python_backend.data_alerts import routes, models
+from autoql_python_backend.webhooks import routes
