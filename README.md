@@ -65,8 +65,44 @@ Request JSON Body
 }
 ```
 
+## Data Alerts
+
+### Create Data Alert Notification via Webhook
+```
+POST /your-webhook
+
+HTTP Headers:
+AutoQL-Signature: <signature_token>
+AutoQL-Timestamp: 1234567890000
+
+Request JSON body:
+{
+    {
+    "event": "data_alert.true",
+    "payload": {
+        "notification_id": "nt_123",
+        "data_alert_id": "da_123",
+        "project_id": "project1",
+        "title": "High Sales",
+        "message":"You've achieved your sales goal this month",
+        "users": ["user1", "user2"],
+        "created_at": 1605910895,
+        "data_return_query": "total sales this month",
+        "query_result": {
+            "reference_id": "1.1.200",
+            "message": "ok",
+            "data":{}
+            }
+        }
+    }
+}
+```
+### Get Data Alert Notification
+```
+GET /notifications/{notification_id}
+```
+
 ## Query Quick Start
 Coming soon
 
-## Data Alerts
-Coming soon
+
